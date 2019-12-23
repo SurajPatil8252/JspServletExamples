@@ -31,6 +31,7 @@ public class UsersListServlet extends HttpServlet {
 			DataSource ds = (DataSource) envContext.lookup("jdbc/UsersDB");
 			Connection conn = ds.getConnection();
 			
+						
 			Statement statement = conn.createStatement();
 			String sql = "select username, email from users";
 			ResultSet rs = statement.executeQuery(sql);

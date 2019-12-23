@@ -27,4 +27,8 @@
 		<url-pattern>/servlet1</url-pattern>
 	</filter-mapping>
 
+	<context-param>
+		<param-name>dbdriver</param-name>
+		<param-value>com.jdbc.odbc.driver</param-value>
+	</context-param>
 </web-app>  
